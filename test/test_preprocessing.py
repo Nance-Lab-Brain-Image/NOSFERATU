@@ -25,7 +25,7 @@ class TestPreprocessing(unittest.TestCase):
     def test_collect_selected_bstack(self):
         test = 0
 
-    def test_image_list_split(self)
+    def test_image_list_split(self):
         ##Just copying the main code from the .ipynb, not a test yet hehes
         folder_location = 'test_data'
         arr = os.listdir(folder_location)
