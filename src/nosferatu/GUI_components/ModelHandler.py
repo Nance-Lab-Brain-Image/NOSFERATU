@@ -2,7 +2,7 @@ from PyQt6.QtCore import pyqtSignal, QThread
 from datetime import datetime
 
 
-class BuildModel(QThread):
+class ModelHandler(QThread):
     """
     Worker class for performing background tasks in a separate thread.
     This class inherits from `QThread` and is designed to handle long-running operations
@@ -42,7 +42,7 @@ class BuildModel(QThread):
         self.csv = csv
         self.entries = entries
         self.outpth = outpth
-        self.clnum = clnum
+        self.n_clusters = n_clusters
 
     def run(self):
         """
